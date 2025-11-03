@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 – Page Not Found | Client Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main class="error-page" role="main">
+        <section class="error-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message">
+                Sorry, the page you were looking for doesn’t exist or has been moved.<br />
+                Please return to the homepage or check your navigation links.
+            </p>
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </section>
+
+        <footer class="error-footer">
+            © <span id="year"></span> Client Project | University of Michigan School of Information
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
